@@ -13,10 +13,15 @@
   "devDependencies": {
     "@babel/core": "^7.1.6",
     "@storybook/addon-info": "^4.0.8",
+    "@storybook/addon-knobs": "^4.0.9",
     "@storybook/react": "^4.0.8",
+    "@types/react": "^16.7.8",
+    "awesome-typescript-loader": "^5.2.1",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.4",
-    "storybook-addon-jsx": "^5.4.0"
+    "react-docgen-typescript-webpack-plugin": "^1.1.0",
+    "storybook-addon-jsx": "^5.4.0",
+    "typescript": "^3.1.6"
   },
   "dependencies": {
     "react": "^16.6.3",
