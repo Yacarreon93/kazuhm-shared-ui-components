@@ -1,11 +1,6 @@
 import * as React from 'react';
 
-export interface Props {
-  bg: string;
-  children: React.ReactNode;
-}
-
-export const Button = (props: Props) => {
+export const Button = (props) => {
   const { bg, children } = props;
   return (
     <button style={{ backgroundColor: bg }}>
