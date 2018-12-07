@@ -1,0 +1,41 @@
+@import '../../scss/_vars.scss';
+
+.alert {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 620px;
+  position: fixed;
+  top: 12vh;
+  left: calc(50% - 310px);
+  padding: 18px 19px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 40px rgba(15, 68, 153, 0.25);
+  opacity: 0;
+  z-index: 100000;
+  transition: opacity 600ms;
+  &:global(.isOpen) {
+    opacity: 1;
+  }
+}
+
+.alertContent {
+  display: flex;
+  align-items: center;
+  min-height: 32px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  padding-right: 30px;
+  &:global(.danger) {
+    color: $red;
+  }
+  &:global(.default) {
+    color: $black;
+  }
+  &:global(.success) {
+    color: $green;
+  }
+}
