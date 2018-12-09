@@ -1,7 +1,3 @@
-import React from 'reat';
-
-function Example() {
-  return <div>Example</div>
-}
+import Example from './Example';
 
 export default Example;
