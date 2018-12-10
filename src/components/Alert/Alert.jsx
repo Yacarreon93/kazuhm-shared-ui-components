@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
-// import CircledNotificationIcon from '../CircledNotificationIcon';
 import { ModalClose } from '../Modal';
+import CircledNotificationIcon from '../Icons/Wrapped/CircledNotificationIcon';
 
 import {
   alert,
@@ -55,7 +55,7 @@ class Alert extends Component {
     const alertContentClassname = classNames(alertContent, { [alertType]: true });
     return (
       <div className={classNames(alert, { isOpen })}>
-        {/* <CircledNotificationIcon /> */}
+        <CircledNotificationIcon />
         <div className={alertContentClassname}>
           {children}
         </div>
