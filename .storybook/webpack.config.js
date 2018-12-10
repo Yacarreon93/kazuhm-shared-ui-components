@@ -37,6 +37,35 @@ module.exports = {
               require.resolve('sass-loader'),
             ],
           },
+          {
+            test: /\.(jpg|png|gif)$/,
+            use: [
+              {
+                loader: 'url-loader',
+                options: {
+                  limit: 10 * 1024,
+                },
+              },
+              {
+                loader: 'image-webpack-loader',
+                options: {
+                  mozjpeg: {
+                    enabled: false,
+                  },
+                  gifsicle: {
+                    interlaced: false,
+                  },
+                  optipng: {
+                    optimizationLevel: 7,
+                  },
+                  pngquant: {
+                    quality: '65-90',
+                    speed: 4,
+                  },
+                },
+              },
+            ],
+          },
         ],
       },
     ],

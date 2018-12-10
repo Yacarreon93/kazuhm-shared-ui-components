@@ -18,13 +18,16 @@
     "@storybook/react": "^4.0.8",
     "babel-loader": "^8.0.4",
     "css-loader": "^1.0.1",
+    "image-webpack-loader": "^4.6.0",
     "node-sass": "^4.10.0",
     "sass-loader": "^7.1.0",
     "storybook-addon-jsx": "^5.4.0",
-    "style-loader": "^0.23.1"
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2"
   },
   "dependencies": {
     "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "react-dom": "^16.6.3",
+    "styled-components": "^4.1.2"
   }
 }
