@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
 // import CircledNotificationIcon from '../CircledNotificationIcon';
-// import { ModalClose } from '../Modal';
+import { ModalClose } from '../Modal';
 
 import {
   alert,
@@ -59,10 +59,10 @@ class Alert extends Component {
         <div className={alertContentClassname}>
           {children}
         </div>
-        {/* <ModalClose
+        <ModalClose
           forAlert
           onClick={toggle}
-        /> */}
+        />
       </div>
     );
   };
