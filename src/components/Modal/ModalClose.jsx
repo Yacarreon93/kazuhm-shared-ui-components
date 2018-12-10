@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
-// import CloseIcon from 'ui/icon/Close';
+import CloseIcon from '../Icons/Close';
 
 import { close } from './modalClose.module.scss';
 
@@ -15,8 +15,7 @@ export default function ModalClose(props) {
       className={classNames(close, { forAlert: props.forAlert })}
       onClick={props.onClick}
     >
-      {/* <CloseIcon /> */}
-      X
+      <CloseIcon />
     </div>
   );
 }
