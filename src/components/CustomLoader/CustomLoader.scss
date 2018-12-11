@@ -1,0 +1,15 @@
+.kzm-custom-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.full-screen {
+    width: 100%;
+    height: 100%;
+    width: 100vw;
+    height: 100vh;
+  }
+  &.full-width {
+    width: 100%;
+    flex-grow: 1;
+  }
+}
