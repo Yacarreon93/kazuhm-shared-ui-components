@@ -31,7 +31,7 @@ function getFlexGrow(props) {
   return '0';
 }
 
-const loadingStyles = css`
+const loadingStyle = css`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,4 +43,4 @@ const loadingStyles = css`
   flex-grow: ${getFlexGrow};
 `;
 
-export default loadingStyles;
+export default loadingStyle;

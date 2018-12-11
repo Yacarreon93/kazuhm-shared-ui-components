@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-import loadingStyles from './loadingStyles';
+import loadingStyle from './loadingStyle';
 
 const StyledLoading = styled.div`
-  ${loadingStyles};
+  ${loadingStyle};
 `;
 
 export default StyledLoading;
