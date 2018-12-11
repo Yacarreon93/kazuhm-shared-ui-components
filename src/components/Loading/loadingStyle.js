@@ -16,7 +16,6 @@ function getLeft(props) {
 }
 
 function getWidth(props) {
-  if (props.fullWidth) return '100%';
   if (props.fullScreen) return '100vw';
   return 'auto';
 }
@@ -27,7 +26,7 @@ function getHeight(props) {
 }
 
 function getFlexGrow(props) {
-  if (props.fullWidth || props.fullScreen) return '1';
+  if (props.centered || props.fullScreen) return '1';
   return '0';
 }
 

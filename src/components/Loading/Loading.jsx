@@ -5,6 +5,7 @@ import StyledLoading from './StyledLoading';
 import imgSrc from '../../assets/gif/loading-icon.gif';
 
 function Loading(props) {
+  console.log('props', props);
   return (
     <StyledLoading {...props}>
       <img src={imgSrc} alt="" />
@@ -13,13 +14,13 @@ function Loading(props) {
 }
 
 Loading.propTypes = {
+  centered: PropTypes.bool,
   fullScreen: PropTypes.bool,
-  fullWidth: PropTypes.bool,
 };
 
 Loading.defaultProps = {
+  centered: false,
   fullScreen: false,
-  fullWidth: false,
 };
 
 export default Loading;

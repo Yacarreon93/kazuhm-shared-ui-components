@@ -1,7 +1,7 @@
 @import '../../../scss/_vars.scss';
 
 .alert {
-  display: flex;
+  display: none;
   flex-direction: row;
   align-items: flex-start;
   width: 620px;
@@ -17,6 +17,7 @@
   z-index: 100000;
   transition: opacity 600ms;
   &:global(.isOpen) {
+    display: flex;
     opacity: 1;
   }
 }
