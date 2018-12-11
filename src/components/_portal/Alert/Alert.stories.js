@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { string } from '@storybook/addon-knobs/react';
 
-import { wInfo } from '../../../.storybook/utils';
+import { wInfo } from '../../../../.storybook/utils';
 
 import Alert from './Alert';
 
