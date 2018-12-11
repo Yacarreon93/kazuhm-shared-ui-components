@@ -5,7 +5,6 @@ import StyledLoading from './StyledLoading';
 import imgSrc from '../../assets/gif/loading-icon.gif';
 
 function Loading(props) {
-  console.log('props', props);
   return (
     <StyledLoading {...props}>
       <img src={imgSrc} alt="" />

@@ -16,6 +16,7 @@ function getLeft(props) {
 }
 
 function getWidth(props) {
+  if (props.centered) return '100%';
   if (props.fullScreen) return '100vw';
   return 'auto';
 }
